@@ -13,7 +13,6 @@ BuildRequires:	XFree86-devel
 BuildRequires:	libdockapp-devel >= 0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 
 %description
 wmDate is a date-display utility designed for WindowMaker Dock. It was
