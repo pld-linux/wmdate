@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=wmDate
 Comment=Date-display utility
-Comment[pl]=Program wy¶wietlaj±cy datê
+Comment[pl]=Program wyÅ›wietlajÄ…cy datÄ™
 Exec=wmdate
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
