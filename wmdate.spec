@@ -10,7 +10,6 @@ Source0:	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/%{name}-%{version}.
 Source1:	wmdate.desktop
 URL:		http://wit401310.student.utwente.nl/apps/wmdate.html
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 BuildRequires:	libdockapp-devel >= 0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
