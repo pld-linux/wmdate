@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=wmDate
+Name=WmDate
 Comment=Date-display utility
 Comment[pl]=Program wyświetlający datę
 Exec=wmdate
