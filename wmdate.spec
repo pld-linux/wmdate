@@ -2,7 +2,7 @@ Summary:	wmdate - date-display utility for X11
 Summary(pl):	wmdate - program dla X11 wy¶wietlaj±cy datê
 Name:		wmdate
 Version:	0.7
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://solfertje.student.utwente.nl/~dalroi/apps/apps/%{name}-%{version}.tar.gz
