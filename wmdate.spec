@@ -9,6 +9,7 @@ Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+# not active!
 URL:		http://wit401310.student.utwente.nl/apps/wmdate.html
 BuildRequires:	XFree86-devel
 BuildRequires:	libdockapp-devel >= 0.2
@@ -38,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README Changelog
 
@@ -47,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,Changelog}.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
-%{_applnkdir}/DockApplets/%{name}.desktop
+#%{_applnkdir}/DockApplets/%{name}.desktop
