@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://solfertje.student.utwente.nl/~dalroi/apps/apps/%{name}-%{version}.tar.gz
+# Source0-md5:	967a20599124da13c876d12cfe08e3a5
 Source1:	%{name}.desktop
 Patch0:		%{name}-ComplexProgramTargetNoMan.patch
 URL:		http://solfertje.student.utwente.nl/~dalroi/apps/wmdate.php
