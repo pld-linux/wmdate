@@ -7,10 +7,9 @@ License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
-Source0:	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/%{name}-%{version}.tar.gz
+Source0:	http://solfertje.student.utwente.nl/~dalroi/apps/apps/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-# not active!
-URL:		http://wit401310.student.utwente.nl/apps/wmdate.html
+URL:		http://solfertje.student.utwente.nl/~dalroi/apps/wmdate.php
 BuildRequires:	XFree86-devel
 BuildRequires:	libdockapp-devel >= 0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
