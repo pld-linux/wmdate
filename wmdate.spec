@@ -5,9 +5,10 @@ Version:	0.7
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/%{name}-%{version}.tar.gz
-Source1:	wmdate.desktop
+Source1:	%{name}.desktop
 URL:		http://wit401310.student.utwente.nl/apps/wmdate.html
 BuildRequires:	XFree86-devel
 BuildRequires:	libdockapp-devel >= 0.2
@@ -17,21 +18,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 wmDate is a date-display utility designed for WindowMaker Dock. It was
-originally based on the displaying lay-out of asclock (which in turn is
-based on the time-display utility used in NeXTStep).
+originally based on the displaying lay-out of asclock (which in turn
+is based on the time-display utility used in NeXTStep).
 
 %description -l pl
 wmDate jest dokowalnym apletem dla WindowMakera wy¶wietlaj±cym datê.
-Jego wygl±d oparty jest na programie asclock (który z kolei jest oparty
-na wy¶wietlaj±cym czas programie dla NextStep).
+Jego wygl±d oparty jest na programie asclock (który z kolei jest
+oparty na wy¶wietlaj±cym czas programie dla NextStep).
 
 %prep
 %setup -q
 
 %build
 xmkmf
-%{__make} CDEBUGFLAGS="$RPM_OPT_FLAGS"
-strip wmdate
+%{__make} CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
