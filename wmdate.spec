@@ -50,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README Changelog
 %attr(755,root,root) %{_bindir}/%{name}
 
-#%{_applnkdir}/DockApplets/%{name}.desktop
+#%%{_applnkdir}/DockApplets/%{name}.desktop
