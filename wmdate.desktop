@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=wmDate
+Comment=Date-display utility
+Comment[pl]=Program wy¶wietlaj±cy datê
+Exec=wmdate
+Terminal=0
+Type=Application
