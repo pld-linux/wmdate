@@ -5,4 +5,5 @@ Comment[pl]=Program wyświetlający datę
 Exec=wmdate
 Terminal=0
 Type=Application
+Encoding=UTF-8
 # vi: encoding=utf-8
