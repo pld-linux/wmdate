@@ -2,14 +2,14 @@ Summary:	wmdate - date-display utility for X11
 Summary(pl):	wmdate - program dla X11 wy¶wietlaj±cy datê
 Name:		wmdate
 Version:	0.7
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://solfertje.student.utwente.nl/~dalroi/apps/apps/%{name}-%{version}.tar.gz
+Source0:	http://solfertje.student.utwente.nl/~dalroi/wmdate/files/%{name}-%{version}.tar.gz
 # Source0-md5:	967a20599124da13c876d12cfe08e3a5
 Source1:	%{name}.desktop
 Patch0:		%{name}-ComplexProgramTargetNoMan.patch
-URL:		http://solfertje.student.utwente.nl/~dalroi/apps/wmdate.php
+URL:		http://solfertje.student.utwente.nl/~dalroi/wmdate/
 BuildRequires:	XFree86-devel
 BuildRequires:	libdockapp-devel >= 0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,13 +37,11 @@ xmkmf -a
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets \
+install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets \
 	$RPM_BUILD_ROOT%{_bindir}
 
 install %{name} $RPM_BUILD_ROOT%{_bindir}
-
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
-
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,5 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README Changelog
 %attr(755,root,root) %{_bindir}/%{name}
-
-#%%{_applnkdir}/DockApplets/%{name}.desktop
+%{_desktopdir}/docklets/%{name}.desktop
