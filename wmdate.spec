@@ -9,6 +9,7 @@ Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://solfertje.student.utwente.nl/~dalroi/apps/apps/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Patch0:		%{name}-ComplexProgramTargetNoMan.patch
 URL:		http://solfertje.student.utwente.nl/~dalroi/apps/wmdate.php
 BuildRequires:	XFree86-devel
 BuildRequires:	libdockapp-devel >= 0.2
@@ -28,10 +29,13 @@ oparty na wy¶wietlaj±cym czas programie dla NextStep).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-xmkmf
-%{__make} CDEBUGFLAGS="%{rpmcflags}"
+xmkmf -a
+%{__make} \
+	CC=%{__cc} \
+	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
