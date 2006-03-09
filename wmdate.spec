@@ -32,7 +32,7 @@ oparty na wy¶wietlaj±cym czas programie dla NextStep).
 %build
 xmkmf -a
 %{__make} \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
