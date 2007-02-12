@@ -1,5 +1,5 @@
 Summary:	wmdate - date-display utility for X11
-Summary(pl.UTF-8):   wmdate - program dla X11 wyświetlający datę
+Summary(pl.UTF-8):	wmdate - program dla X11 wyświetlający datę
 Name:		wmdate
 Version:	0.7
 Release:	4
