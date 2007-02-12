@@ -1,5 +1,5 @@
 Summary:	wmdate - date-display utility for X11
-Summary(pl):	wmdate - program dla X11 wy¶wietlaj±cy datê
+Summary(pl.UTF-8):   wmdate - program dla X11 wyÅ›wietlajÄ…cy datÄ™
 Name:		wmdate
 Version:	0.7
 Release:	4
@@ -20,10 +20,10 @@ wmDate is a date-display utility designed for WindowMaker Dock. It was
 originally based on the displaying lay-out of asclock (which in turn
 is based on the time-display utility used in NeXTStep).
 
-%description -l pl
-wmDate jest dokowalnym apletem dla WindowMakera wy¶wietlaj±cym datê.
-Jego wygl±d oparty jest na programie asclock (który z kolei jest
-oparty na wy¶wietlaj±cym czas programie dla NextStep).
+%description -l pl.UTF-8
+wmDate jest dokowalnym apletem dla WindowMakera wyÅ›wietlajÄ…cym datÄ™.
+Jego wyglÄ…d oparty jest na programie asclock (ktÃ³ry z kolei jest
+oparty na wyÅ›wietlajÄ…cym czas programie dla NextStep).
 
 %prep
 %setup -q
