@@ -2,7 +2,7 @@ Summary:	wmdate - date-display utility for X11
 Summary(pl.UTF-8):	wmdate - program dla X11 wyświetlający datę
 Name:		wmdate
 Version:	0.7
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://solfertje.student.utwente.nl/~dalroi/wmdate/files/%{name}-%{version}.tar.gz
@@ -10,8 +10,9 @@ Source0:	http://solfertje.student.utwente.nl/~dalroi/wmdate/files/%{name}-%{vers
 Source1:	%{name}.desktop
 Patch0:		%{name}-ComplexProgramTargetNoMan.patch
 URL:		http://solfertje.student.utwente.nl/~dalroi/wmdate/
-BuildRequires:	XFree86-devel
 BuildRequires:	libdockapp-devel >= 0.2
+BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-lib-libXpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
